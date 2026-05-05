@@ -1,6 +1,6 @@
 # personal insults that don't fit cleanly elsewhere. moderate and above.
-# pruned: loser (closer, browser, blowser), pos (post, pose,
-# position).
+# word-boundary matching: 'pos' catches the abbreviation but NOT
+# 'post' / 'position'.
 
 dumbass
 dipshit
@@ -8,6 +8,8 @@ jackass
 asshat
 douchebag
 douche
+loser
+pos
 moron
 idiot
 imbecile

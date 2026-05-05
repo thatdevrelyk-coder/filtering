@@ -2,16 +2,18 @@
 # we do NOT block these in academic / news context — but the filter
 # is tuned for chat, not essays. if your friend wants to discuss WW2
 # they can use the off level.
-# pruned: 1488 (could be year or address), isis (very common female
-# given name), boogaloo (electric boogaloo, common dance reference).
+# 'isis' is intentionally omitted — it's also one of the most common
+# female names worldwide and the egyptian goddess.
 
 nazi
 hitler
 heilhitler
 sieghail
+1488
 jihad
 alqaeda
 kkk
 whitepower
 whitepride
 14words
+boogaloo

@@ -1,12 +1,13 @@
 # sexual content that intersects with harm. strict only — but candidates
 # for moving up to relaxed if the surrounding context analysis improves.
-# pruned: rape (drape, grape, scrape, raptor — false-positive city),
-# pedo (pedometer, pediatric, pedestrian — greek root for 'foot'/
-# 'child' is in plenty of innocent words). compounds like rapist /
-# raped / pedophile are kept since they don't substring-collide.
+# word-boundary matching: 'rape' catches the word but NOT 'drape',
+# 'grape', 'scrape', 'raptor'. 'pedo' catches the slang but NOT
+# 'pedometer', 'pediatric', 'pedestrian'.
 
+rape
 rapist
 raped
+pedo
 pedophile
 pedoph
 cp

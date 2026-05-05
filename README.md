@@ -24,8 +24,16 @@ filtering/
   `moderate` + `strict`. `off` includes nothing.
 - the file format is plain text — one word per line. blank lines and
   lines starting with `#` are ignored.
-- matching is case-insensitive and does light leet-speak normalisation
-  (`f4ck`, `sh!t`, etc).
+- matching is **case-insensitive at word boundaries** with leet-speak
+  normalisation (`f4ck`, `sh!t`, etc). so `sex` catches `"sex"` and
+  `"having sex"` but NOT `"essex"`, `"sextet"`, `"sexism"`. `cock`
+  catches `"cock"` but not `"peacock"` or `"shuttlecock"`. `rape`
+  catches `"rape"` but not `"drape"`, `"grape"`, or `"scrape"`.
+- compound usage still gets caught when the listed word appears at
+  a word boundary. `cock` catches `"cocksucker"` (boundary at the
+  start). compound entries like `cumshot`, `gethighwithme`,
+  `findyourhouse` are kept as their own lines so they trip cleanly
+  even when broken across spaces.
 - users can also add their own custom words on top of any level via
   settings → privacy → your custom blocks.
 
@@ -40,34 +48,34 @@ mistake? open a pr.
    moved
 4. one of the maintainers will review
 
-you don't need to touch `client.js` — the in-app viewer is generated
-from these files by `scripts/build-filter-words.mjs`, which runs on
-every deploy. if you want to preview your change locally, run:
-
-```
-npm run build:filter
-```
-
-that rewrites the `FILTER_WORDS` block between the autogen sentinels
-in `public/client.js`. the rest of the deploy pipeline picks it up
-from there.
-
-### labels and ordering
-
-`meta.json` at the root of this folder controls the ui labels for each
-level + category, plus the display order. add a new category folder
-and you should also add it to `categoryOrder` and `categories` in
-`meta.json` so the viewer knows what to call it.
-
 a few rules:
 - **don't add joke words.** this isn't a profanity wishlist — it's a
   real filter that affects real users (including kids).
-- **err on the side of nuance.** "ass" at moderate is fine. "ass" at
-  relaxed isn't, because plenty of people use it conversationally.
+- **avoid bare words that are also legitimate english at word
+  boundaries.** `of` is a preposition; `rope` is a noun; `molly` is
+  a name. word-boundary matching handles substring collisions
+  (essex, raccoon, drape) but it can't help when the bare word is
+  innocent on its own. for those, prefer a compound form
+  (`gethighwithme` instead of `high`, `swatyou` instead of `swat`).
 - **slurs are never debatable.** if it's a slur, it goes in `slurs/`,
   full stop.
 - **regional variations welcome.** if a word is filtered in english
   but not its spanish / french / etc. equivalent, that's a gap.
+
+## the in-app viewer
+
+sodalite ships a "see what's blocked" page at settings → privacy that
+mirrors these files exactly. the build script in the sodalite repo
+(`scripts/build-filter-words.mjs`) clones this repo on every deploy
+and bakes the contents into the client bundle, so the viewer is
+always in sync with what's on github.
+
+### labels and ordering
+
+`meta.json` at the root of this folder controls the ui labels for
+each level + category, plus the display order. add a new category
+folder and you should also add it to `categoryOrder` and `categories`
+in `meta.json` so the viewer knows what to call it.
 
 ## why not just use a library
 

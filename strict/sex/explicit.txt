@@ -1,11 +1,14 @@
 # sexually explicit terms. strict only.
-# pruned: of (a literal english preposition!!), sex (essex, sussex,
-# sexism, sextet, intersex, sexual education context), cum (cumulus,
-# circumcision, succumb, vacuum), cock (peacock, cockroach,
-# shuttlecock, cocktail, stopcock), clit (click, client, clitoris
-# itself is fine but it's already in there), balls (footballs,
-# snowballs, eyeballs).
+# word-boundary matching: 'sex' catches the word but NOT 'essex',
+# 'sextet', 'sexism', 'intersex'. 'cock' catches the word but NOT
+# 'peacock', 'shuttlecock', 'cocktail'. 'cum' catches the word but
+# NOT 'cumulus', 'circumcision', 'succumb'. 'clit' catches the word
+# but NOT 'click' or 'client'. 'balls' catches the word but NOT
+# 'footballs' or 'snowballs'.
+# 'of' is intentionally omitted (literal english preposition); use
+# 'onlyfans' which is on its own line.
 
+sex
 sexy
 porn
 pornhub
@@ -18,6 +21,7 @@ xxx
 hentai
 rule34
 r34
+cum
 cumming
 semen
 jizz
@@ -41,6 +45,7 @@ hookedup
 fucked
 gotlaid
 pussy
+cock
 dick
 dik
 penis
@@ -51,6 +56,8 @@ tits
 titty
 tiddies
 nipple
+clit
 cunt
 kunt
+balls
 nutsack

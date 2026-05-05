@@ -1,11 +1,10 @@
 # common profanity. blocked at moderate and above.
 # missing from this list at relaxed because plenty of people use
 # these conversationally without intent to harm.
-# pruned: mf, bs, sob, pos (two-letter abbreviations matching tons
-# of innocent words — comfort, abs, sober, post). ass / arse (class,
-# pass, mass / parse, sparse). hell (hello, shell). crap (scrap).
-# prick (pinprick). bloody (blood test). these still get blocked
-# inside compounds — `asshole` and `dumbass` are intact.
+# word-boundary matching: 'ass' catches the slur but NOT 'class',
+# 'pass', 'mass', 'bass'. 'hell' catches the swear but NOT 'hello'
+# or 'shell'. 'bs' / 'mf' / 'sob' catch the bare abbreviations but
+# NOT 'absolute' / 'comfort' / 'absorb'.
 
 fuck
 fck
@@ -22,27 +21,36 @@ fking
 motherfucker
 mfer
 mthrfckr
+mf
 shit
 sht
 shyt
 shiet
 bullshit
+bs
 bitch
 btch
 biatch
 bich
 bitchy
+sob
 sonofabitch
 asshole
 azzhole
 arsehole
+ass
+arse
 bastard
 damn
 damnit
 goddamn
+hell
+crap
 piss
 pissed
+prick
 twat
 wank
 wanker
 bollocks
+bloody

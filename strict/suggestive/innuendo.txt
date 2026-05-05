@@ -1,27 +1,38 @@
 # suggestive but not explicit. strict only — these slip through at
 # moderate because plenty of people use them in casual / joking context.
-# pruned: thirsty (literally being thirsty), hot (hot soup, hot day),
-# daddy / mommy (literal parents), spicy (spicy food), flashed
-# (flashed a smile, flashed past), freaky / freakin (freaking out
-# casually), kink (kink in a hose), rp (corp, harp, warp, tarp).
+# word-boundary matching keeps these from blowing up too badly:
+# 'hot' catches the bare word but NOT 'hotel' or 'hotdog' (those
+# have non-boundary char following). 'kink' catches the bare word
+# but NOT 'kinky' (already on its own line) or 'kinkajou'. 'rp'
+# catches the abbreviation but NOT 'corp', 'harp', 'tarp'.
 
+thirsty
 thirsttrap
+hot
 hotaf
+daddy
+mommy
 sugarbaby
 sugardaddy
 sugarmommy
 nudez
 nudie
+spicy
 spicypics
 spicypic
 nopants
+flashed
 sendpics
 sendnoods
 slidethrough
 ufreaky
+freaky
+freakin
 kinky
+kink
 fetish
 roleplay
+rp
 naughty
 seductive
 arousing

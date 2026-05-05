@@ -1,7 +1,10 @@
 # slurs targeting lgbtq+ people. always blocked at relaxed and above.
-# pruned: dyke (van dyke surname), homo (homogeneous, homosapien),
-# queer (reclaimed + academic), fairy (tooth fairy, fairy tale),
-# twink (twinkie, twinkle, hoodwink).
+# word-boundary matching means 'homo' catches the slur but NOT
+# 'homogeneous' or 'homosapien'; 'twink' catches the slur but NOT
+# 'twinkle'. 'queer' is reclaimed by parts of the community in
+# academic / self-id context — strict-tier users who want it
+# unfiltered can drop to off, and the matcher only fires on bare
+# 'queer', not '..queer..' substrings.
 
 faggot
 fag
@@ -9,6 +12,11 @@ fggt
 faggy
 tranny
 trannie
+dyke
+homo
+queer
+fairy
+twink
 shemale
 tgirl
 ladyboy

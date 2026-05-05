@@ -1,8 +1,9 @@
 # racial slurs. always blocked at relaxed and above.
-# matched as a substring with leet-speak normalisation, so anything
-# that would substring-collide with a common english word is pruned
-# (cracker → graham cracker, coon → raccoon, spic → specific,
-# jap → japan, gook → gobbledygook, oriental → oriental rug, etc).
+# matched at word boundaries (case-insensitive, with leet-speak
+# normalisation), so 'spic' catches the slur but NOT 'specific';
+# 'coon' catches the slur but NOT 'raccoon'; 'jap' catches the slur
+# but NOT 'japan'. compound usage (cracker-jack, cracker-barrel) is
+# unavoidably blocked too — that's the trade-off for a real filter.
 
 nigg
 nigga
@@ -10,13 +11,22 @@ nigger
 niglet
 niggr
 kike
+spic
+spik
 chink
+gook
 wetback
 beaner
 towelhead
 raghead
 sandnigger
 jigaboo
+coon
 porchmonkey
+cracker
+honky
+gringo
 chinaman
 slanteyes
+oriental
+jap

@@ -1,10 +1,12 @@
 # direct threats of violence. always blocked at relaxed and above.
-# context matters — these are weighted heavily, not auto-flagged
-# in isolation, but combinations trip the filter.
-# pruned: kms (kilometers), rope (climbing rope, jump rope, rope of pearls).
+# word-boundary matching: 'kms' catches the slang but NOT '5kms'
+# (with the digit boundary). 'rope' is omitted because the bare word
+# is overwhelmingly used innocently — 'ropeyourself' is kept as the
+# compound form.
 
 killyourself
 kys
+kms
 killyou
 killuself
 illkillyou

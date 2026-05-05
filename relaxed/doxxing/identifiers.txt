@@ -2,9 +2,10 @@
 # scale. these are anchor words that, combined with a phone-number /
 # address pattern in the same message, raise the score. the actual
 # regex lives in the worker. patches welcome.
-# pruned: ssn (lesson, missions), license (drivers license — common
-# document, not an attack signal), passport (passport photo, passport
-# size), findyou (find yourself, find your keys).
+# word-boundary matching: 'ssn' catches social-security but NOT
+# 'lesson'; 'license' catches the bare word but compound usage like
+# 'licensed' or 'licensing' is intentionally let through (a kid
+# saying "i got my license" isn't doxxing themselves).
 
 doxx
 dox
@@ -16,7 +17,9 @@ heraddress
 youraddress
 homeaddress
 phonenumber
+ssn
 socialsecurity
+findyou
 findyourhouse
 findyourschool
 swatyou

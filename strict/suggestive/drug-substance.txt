@@ -1,28 +1,42 @@
 # substance references that aren't outright illegal-promotion but
 # might still warrant filtering for a younger audience. strict only.
-# pruned heavily — most drug names are everyday words too:
-# weed (tweed, weed in garden), high (highway, highlight),
-# edibles (incredibles), acid (acidity, citric acid),
-# percs (percent, perception), addy/addys (caddy), oxy (oxygen,
-# oxide), molly (common given name), ecstasy (an emotion),
-# coke (coca-cola), crack (cracker, cracked),
-# meth (method, methodology), heroin (heroine — female hero),
-# plug (electrical plug), dealer (car dealer).
-# kept the ones that are unique to the topic + compound phrases.
+# word-boundary matching: 'high' catches the bare word but NOT
+# 'highway' / 'highlight' / 'highest'. 'meth' catches the bare word
+# but NOT 'method'. 'coke' catches the slang but NOT 'cokebottle'.
+# 'crack' catches the slang but NOT 'cracker' or 'cracked'.
+# 'heroin' catches the drug but NOT 'heroine' (which has the
+# trailing -e and so the word boundary fires after 'heroin', not
+# inside 'heroine').
+# 'molly' is intentionally omitted — extremely common given name.
+# 'plug' / 'dealer' are also omitted as bare words; use the compound
+# form 'drugdealer'.
 
+weed
 420
+high
 stoned
+edibles
 shrooms
 psilocybin
+acid
 lsd
 xan
 xans
 xanax
+percs
 percocet
 adderall
+addy
+addys
+oxy
 oxycontin
 mdma
+ecstasy
+coke
 cocaine
+crack
+meth
+heroin
 fentanyl
 drugdealer
 gettinghigh
