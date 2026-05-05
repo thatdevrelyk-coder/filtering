@@ -1,0 +1,37 @@
+# substance references that aren't outright illegal-promotion but
+# might still warrant filtering for a younger audience. strict only.
+
+weed
+420
+high
+stoned
+edibles
+shrooms
+psilocybin
+acid
+lsd
+xan
+xans
+xanax
+percs
+percocet
+adderall
+addy
+addys
+oxy
+oxycontin
+mdma
+molly
+ecstasy
+coke
+cocaine
+crack
+meth
+heroin
+fentanyl
+plug
+drugdealer
+dealer
+gettinghigh
+gethigh
+gethighwithme

@@ -1,0 +1,24 @@
+# NOTE: doxxing detection is heuristic — exact text matches don't
+# scale. these are anchor words that, combined with a phone-number /
+# address pattern in the same message, raise the score. the actual
+# regex lives in the worker. patches welcome.
+
+doxx
+dox
+ipgrab
+ipgrabber
+gripip
+hisaddress
+heraddress
+youraddress
+homeaddress
+phonenumber
+ssn
+socialsecurity
+license
+passport
+findyou
+findyourhouse
+findyourschool
+swatyou
+swatting

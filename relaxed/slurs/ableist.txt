@@ -1,0 +1,14 @@
+# ableist slurs. always blocked at relaxed and above.
+
+retard
+retarded
+retart
+tard
+mongoloid
+sped
+spaz
+cripple
+midget
+psycho
+loony
+nutjob

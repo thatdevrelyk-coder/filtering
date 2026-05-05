@@ -1,0 +1,29 @@
+{
+  "_comment": "metadata for the word lists. labels + descriptions render in the filter-words viewer; order arrays control display sequence so a fresh git clone shows the same view regardless of filesystem ordering.",
+  "levelOrder": ["off", "relaxed", "moderate", "strict"],
+  "levels": {
+    "off":      { "title": "off",      "summary": "nothing filtered. you'll see every message exactly as sent." },
+    "relaxed":  { "title": "relaxed",  "summary": "just the basics — slurs, threats, doxxing." },
+    "moderate": { "title": "moderate", "summary": "basics + light profanity." },
+    "strict":   { "title": "strict",   "summary": "basics + profanity + suggestive words + sexual content." }
+  },
+  "levelStacks": {
+    "off":      [],
+    "relaxed":  ["relaxed"],
+    "moderate": ["relaxed", "moderate"],
+    "strict":   ["relaxed", "moderate", "strict"]
+  },
+  "categoryOrder": {
+    "relaxed":  ["slurs", "threats", "doxxing"],
+    "moderate": ["profanity"],
+    "strict":   ["sex", "suggestive"]
+  },
+  "categories": {
+    "relaxed/slurs":      { "label": "slurs",      "desc": "racist, homophobic, ableist slurs." },
+    "relaxed/threats":    { "label": "threats",    "desc": "death threats, self-harm push, swatting." },
+    "relaxed/doxxing":    { "label": "doxxing",    "desc": "sharing addresses, phone numbers, ip grabs, swat threats." },
+    "moderate/profanity": { "label": "profanity",  "desc": "common swears + insults that hit harder than casual." },
+    "strict/sex":         { "label": "sex",        "desc": "explicit sexual terms, plus sex × harm overlap." },
+    "strict/suggestive":  { "label": "suggestive", "desc": "innuendo + drug / substance references." }
+  }
+}

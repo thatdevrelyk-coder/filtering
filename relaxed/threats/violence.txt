@@ -1,0 +1,23 @@
+# direct threats of violence. always blocked at relaxed and above.
+# context matters — these are weighted heavily, not auto-flagged
+# in isolation, but combinations trip the filter.
+
+killyourself
+kys
+kms
+killyou
+killuself
+illkillyou
+gonnakill
+gonnamurder
+murderyou
+killmyself
+endmyself
+endyourlife
+slityourwrist
+hangyourself
+shootyourself
+unalive
+neckyourself
+rope
+ropeyourself

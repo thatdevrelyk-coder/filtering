@@ -1,0 +1,28 @@
+# racial slurs. always blocked at relaxed and above.
+# matched as a substring with leet-speak normalisation.
+
+nigg
+nigga
+nigger
+niglet
+niggr
+kike
+spic
+spik
+chink
+gook
+wetback
+beaner
+towelhead
+raghead
+sandnigger
+jigaboo
+coon
+porchmonkey
+cracker
+honky
+gringo
+chinaman
+slanteyes
+oriental
+jap
