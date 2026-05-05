@@ -1,4 +1,7 @@
 # slurs targeting lgbtq+ people. always blocked at relaxed and above.
+# pruned: dyke (van dyke surname), homo (homogeneous, homosapien),
+# queer (reclaimed + academic), fairy (tooth fairy, fairy tale),
+# twink (twinkie, twinkle, hoodwink).
 
 faggot
 fag
@@ -6,11 +9,6 @@ fggt
 faggy
 tranny
 trannie
-dyke
-homo
-queer
-fairy
-twink
 shemale
 tgirl
 ladyboy

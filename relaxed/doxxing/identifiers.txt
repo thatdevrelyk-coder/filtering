@@ -2,6 +2,9 @@
 # scale. these are anchor words that, combined with a phone-number /
 # address pattern in the same message, raise the score. the actual
 # regex lives in the worker. patches welcome.
+# pruned: ssn (lesson, missions), license (drivers license — common
+# document, not an attack signal), passport (passport photo, passport
+# size), findyou (find yourself, find your keys).
 
 doxx
 dox
@@ -13,11 +16,7 @@ heraddress
 youraddress
 homeaddress
 phonenumber
-ssn
 socialsecurity
-license
-passport
-findyou
 findyourhouse
 findyourschool
 swatyou

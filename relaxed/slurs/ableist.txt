@@ -1,14 +1,12 @@
 # ableist slurs. always blocked at relaxed and above.
+# pruned: tard (bastard, petard), sped (speed past tense),
+# cripple (crippling burden), psycho (psychology, psychopath),
+# loony (looney tunes, loon the bird).
 
 retard
 retarded
 retart
-tard
 mongoloid
-sped
 spaz
-cripple
 midget
-psycho
-loony
 nutjob

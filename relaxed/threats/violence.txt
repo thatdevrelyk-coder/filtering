@@ -1,10 +1,10 @@
 # direct threats of violence. always blocked at relaxed and above.
 # context matters — these are weighted heavily, not auto-flagged
 # in isolation, but combinations trip the filter.
+# pruned: kms (kilometers), rope (climbing rope, jump rope, rope of pearls).
 
 killyourself
 kys
-kms
 killyou
 killuself
 illkillyou
@@ -19,5 +19,4 @@ hangyourself
 shootyourself
 unalive
 neckyourself
-rope
 ropeyourself
