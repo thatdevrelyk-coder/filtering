@@ -3,8 +3,11 @@
 # these conversationally without intent to harm.
 # word-boundary matching: 'ass' catches the slur but NOT 'class',
 # 'pass', 'mass', 'bass'. 'hell' catches the swear but NOT 'hello'
-# or 'shell'. 'bs' / 'mf' / 'sob' catch the bare abbreviations but
-# NOT 'absolute' / 'comfort' / 'absorb'.
+# or 'shell'. 'bs' / 'mf' catch the bare abbreviations but NOT
+# 'absolute' / 'comfort'.
+# 'sob' is intentionally omitted — at word boundaries it catches
+# the verb meaning to cry ('she sobbed' is filtered too aggressive-
+# ly). 'sonofabitch' is kept as the compound form.
 
 fuck
 fck
@@ -33,7 +36,6 @@ btch
 biatch
 bich
 bitchy
-sob
 sonofabitch
 asshole
 azzhole
